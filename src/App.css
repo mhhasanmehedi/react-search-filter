@@ -1,11 +1,34 @@
 .app {
   margin: 50px;
 }
-.search {
-  display: block;
+.input-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
   margin: auto;
-  padding: 10px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.input-box .fa-solid {
+  width: 10%;
+  display: inline-block;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+
+.search {
   font-size: 20px;
+  height: 100%;
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 .list {
   padding: 0;

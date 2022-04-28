@@ -15,12 +15,17 @@ function App() {
   };
   return (
     <div className="app">
-      <input
-        type="text"
-        placeholder="Search..."
-        className="search"
-        onChange={(e) => setQuery(e.target.value)}
-      />
+
+      <div className="input-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input
+          type="text"
+          placeholder="Search..."
+          className="search"
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+      
       <Table data={search(Users)} />
     </div>
   );
